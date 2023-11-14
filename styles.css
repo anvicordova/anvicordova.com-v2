@@ -1,0 +1,49 @@
+/* styles.css */
+
+body {
+  font-family: 'Forum', sans-serif; /* Use the Forum font for the whole page */
+  margin: 0;
+  padding: 0;
+  background-color: #FFDE59; /* Set the background color for the whole page */
+  color: #61278B; /* Set the general font color for the whole page */
+  font-size: 18px; /* Set the basic font size for the whole page */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure the page takes at least the full height of the viewport */
+}
+
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h1 span {
+  display: block; /* Ensure each span is on a new line */
+  font-family: 'Amsterdam One', cursive; /* Set the Amsterdam One font for the span */
+  font-size: 60px; /* Set the font size for the span */
+  color: #FF66C4; /* Set the new color for the span */
+}
+
+section {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
