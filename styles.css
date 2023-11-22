@@ -1,49 +1,97 @@
 /* styles.css */
 
 body {
-  font-family: 'Forum', sans-serif; /* Use the Forum font for the whole page */
+  font-family: 'Roboto Mono', monospace;
   margin: 0;
   padding: 0;
-  background-color: #FFDE59; /* Set the background color for the whole page */
-  color: #61278B; /* Set the general font color for the whole page */
-  font-size: 18px; /* Set the basic font size for the whole page */
+  background-color: #FFDE59;
+  color: #61278B;
+  font-size: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Ensure the page takes at least the full height of the viewport */
+  min-height: 100vh;
 }
 
 h1 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: center;
+  font-size: 60px;
 }
 
 h1 span {
-  display: block; /* Ensure each span is on a new line */
-  font-family: 'Amsterdam One', cursive; /* Set the Amsterdam One font for the span */
-  font-size: 60px; /* Set the font size for the span */
-  color: #FF66C4; /* Set the new color for the span */
+  display: block; 
+  font-family: 'Sacramento', cursive; 
+  font-size: 120px; 
+  font-weight: 400;
+  color: #FF66C4;
 }
 
 section {
-  max-width: 600px;
-  margin: 20px auto;
-  padding: 0 20px;
+  max-width: 750px;
+  text-align: center; 
+  font-weight: 300;
+  color: #004AAD;
+}
+
+.code {
+  color: #FF3131;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.books {
+  color: #00BF63;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.crocheting {
+  color:#FF66C4;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.coffee {
+  color: #5E17EB;
+  font-weight: bold;
+  white-space: nowrap;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 nav li {
-  display: inline;
-  margin-right: 20px;
+  margin: 0 10px;
 }
 
 nav a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
+}
+
+nav img {
+  width: 30px; 
+  height: 30px;
+  filter: invert(19%) sepia(24%) saturate(6150%) hue-rotate(260deg) brightness(88%) contrast(95%);
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h1 span {
+    font-size: 70px;
+  }
+
+  section {
+    max-width: 80%;
+  }
 }
